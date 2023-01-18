@@ -7,6 +7,12 @@ use Throwable;
 
 class Handler extends ExceptionHandler
 {
+    //public function report(Exception$exception);
+public function report(Throwable $exception);
+
+//public function render($request, Exception $exception);
+public function render($request, Throwable $exception);
+
     /**
      * A list of the exception types that are not reported.
      *
